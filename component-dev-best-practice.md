@@ -289,6 +289,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Component architecture should be discussed and approved before start coding
 
 \*\*Development:\*\*
+
 \- [ ] Code is written and formatted in accordance with the Styling guide\
 \- [ ] Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.\
 \- [ ] Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)\
@@ -300,10 +301,12 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] All development branches are reviewed
 
 \*\*After QA:\*\*
+
 \- [ ] All development branches are merged into master branch\
 \- [ ] Sprint review preparation is finished (demo flow is built)
 
 \*\*QA:\*\*
+
 \- [ ] Test cases for the component are ready at the TestRail\
 \- [ ] Functional testing is finished\
 \- [ ] Regression testing is finished (optional)\
@@ -355,6 +358,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \*\*DoD**
 
 \*\*Integration application development prerequisites:\*\*
+
 \- [ ] Development team has access to the source with all requirements\
 \- [ ] Meeting with Platform team representatives (for example Scrum Master) regarding E.IO platform changes (API etc.), which could potentially affect on Integration application development process\
 \- [ ] Access to the needed services with all needed permissions is granted\
@@ -362,6 +366,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Integration application architecture should be discussed and approved before starting coding
 
 \*\*Development:\*\*
+
 \- [ ] Code is written and formatted in accordance with the Styling guide\
 \- [ ]Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.\
 \- [ ] Integration application logs does not contain any sensitive data (if needed due to requirements)\
@@ -377,10 +382,12 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 &nbsp;&nbsp;- Changelogs (CHANGELOG.md)
 
 \*\*After QA:\*\*
+
 \- [ ] All development branches are reviewed and merged into master branch\
 \- [ ] Sprint review preparation is finished.
 
 \*\*QA:\*\*
+
 \- [ ] Test cases for the Integration application are ready at the TestRail\
 \- [ ] Functional testing is finished\
 \- [ ] Regression testing is finished (optional)\
@@ -392,6 +399,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \*\*DoD**
 
 \*\*Development:\*\*
+
 \- [ ] Code is written and formatted in accordance with the Styling guide\
 \- [ ] Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.\
 \- [ ] Code Library logs does not contain any sensitive data (if needed due to requirements)\
