@@ -1,8 +1,8 @@
-#Elastic.io Professional services team. Development guide
+# Elastic.io Professional services team. Development guide
 
 * [Component development](#component-development)
   * [Component development prerequisites](#component-development-prerequisites)
-  * [Definition of Done (CD-DoD)](#definition-of-done-cd-dod)
+  * [Component Development Definition of Done (CD-DoD)](#component-development-definition-of-done-cd-dod)
     * [Component Development Process](#component-development-process)
     * [Component Development Quality Assurance](#component-development-quality-assurance)
     * [Sprint Review (Demo) Definition of Done (SR-DoD)](#sprint-review-demo-definition-of-done-sr-dod)
@@ -18,12 +18,12 @@
     * [Automated Build Tools](#automated-build-tools)
 * [Integration application development](#integration-application-development)
   * [Integration application development prerequisites](#integration-application-development-prerequisites)
-  * [Definition of Done (IA-DoD)](#definition-of-done-ia-dod)
+  * [Integration application Definition of Done (IA-DoD)](#integration-application-definition-of-done-ia-dod)
     * [Integration application Development Process](#integration-application-development-process)
     * [Integration application Quality Assurance](#integration-application-quality-assurance)
 * [Code Library development](#code-library-development)
   * [Code Library development prerequisites](#code-library-development-prerequisites)
-  * [Definition of Done (CL-DoD)](#definition-of-done-cl-dod)
+  * [Code Library Definition of Done (CL-DoD)](#code-library-definition-of-done-cl-dod)
     * [Code Library Development Process](#code-library-development-process)
     * [Code Library Quality Assurance](#code-library-quality-assurance)
 * [Coding style](#coding-style)
@@ -40,18 +40,18 @@
     * [Standard action/trigger description](#standard-actiontrigger-description)
   * [Integration Application Definition of Done (IA-DoD) template](#integration-application-definition-of-done-ia-dod-template)
   * [Code library Definition of Done (CL-DoD) template](#code-library-definition-of-done-cl-dod-template)
-
-##Component development 
-###Component development prerequisites
+
+## Component development 
+### Component development prerequisites
  * Development team has all needed requirements
  * Access to the needed service with all needed permissions is granted
  * No open tasks that could block Component development process
  * The E.io’s GitHub repository must be checked if there is another implementation of the component under development. If it exists, new repository should not be created
  * Component architecture should be discussed and approved before start coding.
 
-###Definition of Done (CD-DoD)
+### Component Development Definition of Done (CD-DoD)
 You can find a [CD-DoD template here](#component-development-definition-of-done-cd-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
-####Component Development Process
+#### Component Development Process
 * Code is written and formatted in accordance with the [Styling guide](#coding-style)
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)
@@ -66,7 +66,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * All development branches are merged into master branch
 * Sprint review preparation is finished (demo flow is built)
 
-####Component Development Quality Assurance
+#### Component Development Quality Assurance
 * Test cases for the component are ready at the TestRail.
 * Functional testing is finished.
 * Regression testing is finished (optional).
@@ -77,7 +77,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Component Roadmap is updated.
 * Component spreadsheet is updated
 
-###Sprint Review (Demo) Definition of Done (SR-DoD)
+### Sprint Review (Demo) Definition of Done (SR-DoD)
 * The component is deployed to a production system (e.g. [app.elastic.io](https://app.elastic.io)) or other tenant (if needed)
 * Demo-flow is created before demo
 * Name of demo-flow is meaningful and understandable and displays the purpose of the action/trigger (don't use 'Give me a name')
@@ -87,48 +87,48 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * `EIO_REQUIRED_RAM_MB` var is configured if needed
 * Configure external systems if needed (create Items, Customers, enable web service access etc.).
 
-###Tests
-####Unit tests
+### Tests
+#### Unit tests
 * Sample use cases
 * Un-common edge cases
 * Blocks of non-trivial code that doesn’t talk directly to the external system
 * Tests to verify correct metadata transformation.
-####Integration Tests
+#### Integration Tests
 * Designed to run against the API for the component
 * Any data created during integration tests should indicate that it was created by integration tests
 * Any data that needs to be read from the API should be flagged in the test system that it is relied upon in integration tests.
 
-###Logging
+### Logging
 * Don’t log any credential
 * Don’t log the data itself as it is moving through our system.
 
-###Credentials
+### Credentials
 The following pieces of information should be stored in credentials in [BitWarden](https://bitwarden.com) (or any other):
 * Credentials to elastic.io’s test instance
 * A note which can be used as a .env file for running integration tests
 * OAuth keys (including any test keys) (if applicable).
 
-###component.json
+### component.json
 * There should be a description for the component
 * Each action & trigger should have a description
 * Each config field for the credentials, actions and triggers should have a note and placeholder unless obvious (such as for a password)
 
-###Logo
+### Logo
 * The logo file should be a 128 x 128 px PNG file on a transparent background.
 
-###License
+### License
 * When code is open sourced, it should be released under the Apache 2.0 License
 * The LICENSE file checked into Git should reference elastic.io’s copyright of the code and contain a link to the full text of the Apache 2.0 license, not the original license text.  [See this example](https://github.com/openintegrationhub/jdbc-component/blob/master/LICENSE)
 * Not all components will be open sourced as in the future we may introduce a premium tier of components
 * When code is closed source, the LICENSE file should reference elastic.io’s copyright of the code.  [See this example](https://github.com/elasticio/moodle-component/blob/master/LICENSE).
 
-###Git
+### Git
 * Squash and merge should be used on merges after a PR.  Ideally, GitHub should be configured so that this is the default
 * Delete branches once merged through a PR
 * A .gitignore file should be checked in that keeps files and folders such as node_modules and .idea folders from being checked in
 * Whitespace should be consistent through automated tools such as .editorconfig and .gitattribues files.
 
-###Automated Build Tools
+### Automated Build Tools
 There are two automated build tools used at elastic.io:
 * [Circle CI](https://circleci.com/dashboard) for closed source repositories
 * [Travis CI](https://travis-ci.org/) for open source repositories.
@@ -140,17 +140,17 @@ Notes for automated build tools:
 * Environment variables need to be configured in the build
 * Build tools produce badge icons that can be embedded in the Readme (should be embedded if the tool is used).
 
-##Integration application development
-###Integration application development prerequisites
+## Integration application development
+### Integration application development prerequisites
 * PS team has access to the source with all requirements
 * Meeting with Platform team representatives (for example Scrum Master) regarding E.IO platform changes (API etc.), which could potentially affect on Integration application development process
 * Access to the needed services with all needed permissions is granted
 * No open tasks that could block Integration application development process
 * Integration application architecture should be discussed and approved before starting coding.
 
-###Definition of Done (IA-DoD)
+### Integration application Definition of Done (IA-DoD)
 You can find an [IA-DoD template here](#integration-application-definition-of-done-ia-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
-####Integration application Development Process
+#### Integration application Development Process
 * Code is written and formatted in accordance with the Styling guide
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Integration application logs does not contain any sensitive data (if needed due to requirements)
@@ -168,7 +168,7 @@ You can find an [IA-DoD template here](#integration-application-definition-of-do
 * All development branches are reviewed and merged into master branch
 * Sprint review preparation is finished.
 
-####Integration application Quality Assurance
+#### Integration application Quality Assurance
 * Test cases for the Integration application are ready at the TestRail
 * Functional testing is finished
 * Regression testing is finished (optional)
@@ -176,17 +176,17 @@ You can find an [IA-DoD template here](#integration-application-definition-of-do
   * Smoke test is finished
 * Release notes are done.
 
-##Code Library development
-###Code Library development prerequisites
+## Code Library development
+### Code Library development prerequisites
 * PS team has access to the source with all requirements
 * Meeting with Platform team representatives regarding Code Library re-usability
 * Access to the needed services/code with all needed permissions is granted
 * No open tasks that could block Code Library development process
 * Code Library architecture should be discussed and approved before start coding.
 
-###Definition of Done (CL-DoD)
+### Code Library Definition of Done (CL-DoD)
 You can find a [CL-DoD template here](#code-library-definition-of-done-cl-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
-####Code Library Development Process
+#### Code Library Development Process
 * Code is written and formatted in accordance with the Styling guide
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Code Library logs does not contain any sensitive data (if needed due to requirements)
@@ -202,10 +202,10 @@ You can find a [CL-DoD template here](#code-library-definition-of-done-cl-dod-te
   * Npm (for Node.js)
 * Sprint review preparation is finished.
 
-####Code Library Quality Assurance
+#### Code Library Quality Assurance
 * Code Library will be only tested in affected components/integration applications due to the complexity of Code Library testing itself.
 
-##Coding style
+## Coding style
 >Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. – Rick Osborne
 
 This document describes practices and opinionated set of conventions for the Java and JavaScript programming languages. 
@@ -216,8 +216,8 @@ Goals
 * Reduce an amount of errors and bugs
 * Implemented coding styles and best practices significantly improve code readability, maintainability and allows to produce more bugs-free code.
 
-###JavaScript Coding Style
-####Code Quality
+### JavaScript Coding Style
+#### Code Quality
 * [The async/await keyword combination pair is the preferred way to handle async code.](https://codeburst.io/async-patterns-in-node-js-only-4-different-ways-to-do-it-70186ee83250?gi=92953dd8e280)
   *  [Related reading on Node’s event loop/concurrency handling](https://blog.risingstack.com/node-js-at-scale-understanding-node-js-event-loop/)
 * Code (in dependency libraries) that is callback based should use promisify to allow the use of await
@@ -234,7 +234,7 @@ Goals
   * A spec folder for unit tests which do not talk to external systems
   * A spec-integration folder for automated tests which communicate with the external system
 
-####Package.json
+#### Package.json
 * Package-lock.json should be checked into source code
 * Version references in package.json should be exact and not use the ^ or ~ character.
 * A [pretest script](https://docs.npmjs.com/misc/scripts) should be used to enforce linting. (e.g. eslint verifyCredentials.js lib spec spec-integration --fix) and possibly dependency security vulnerabilities with [npm audit](https://docs.npmjs.com/cli/audit) (previously [nsp](https://www.npmjs.com/package/nsp) was used in some components)
@@ -242,7 +242,7 @@ Goals
 * An integration-test script for integration tests (e.g. “mocha spec-integration”)
 * Author, keywords, files, engines, name, version and private should be set appropriately 
 
-####Default Libraries
+#### Default Libraries
 * HTTP requests should be made with [request.js](https://www.npmjs.com/package/request)
 * Unit tests should be run with [mocha.js](https://mochajs.org/)
 * Assertions should be done with [chai’s expect framework](https://www.chaijs.com/api/bdd/)
@@ -250,7 +250,7 @@ Goals
 * Spies, stubs & mocks should be done with [sinon.js](https://sinonjs.org/) (e.g. creating a mock emitter)
 * Logging should be done by [debug](https://www.npmjs.com/package/debug)
 
-###Java Coding Style
+### Java Coding Style
 The proposed style to follow is Google recommended one: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
 There are settings files containing these rules which can be downloaded and imported into IDE (IntelliJ Idea and Eclipse). 
@@ -260,7 +260,7 @@ Here is a short installation guide:
 After importing, a developer can format the code automatically with a keyboard shortcut (e.g. Alt+Shift+F).
 It is recommended to use [CheckStyle-IDEA plugin](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea) to use both real-time and on-demand scanning of Java files.
 
-####Static code analysis
+#### Static code analysis
 All the code before the pull-request should be analyzed with static analyzing tools.
 
 Recommended tools to use:
@@ -269,25 +269,27 @@ Recommended tools to use:
 
 [FindBugs-IDEA](https://plugins.jetbrains.com/plugin/3847-findbugs-idea). Provides static bytecode analysis to look for bugs in Java code from within IntelliJ IDEA. FindBugs is a defect detection tool for Java that uses static analysis to look for more than 200 bug patterns, such as null pointer dereferences, infinite recursive loops, bad uses of the Java libraries and deadlocks.
 
-####Test coverage
+#### Test coverage
 The code before being pull-requested must be covered with unit tests as much as possible. 
 To achieve easy test coverage the code should be written (or accordingly refactored) with [SOLID, KISS](https://en.wikipedia.org/wiki/KISS_principle) principles in mind. Appropriate design patterns should be used if needed as well.
 The code coverage percentage is another point to discuss and agree. But it should be as close to 100% as possible.
 
-##Templates
+## Templates
 Templates to paste into each (main, not sub-) GitHub task in order to check the readiness
 
-###Component Development Definition of Done (CD-DoD) template
+### Component Development Definition of Done (CD-DoD) template
 \*\*DoD**
 
-\*\*Component development prerequisites:**
+\*\*Component development prerequisites:\*\*
+
 \- [ ] Development team has all needed requirements\
 \- [ ] Access to the needed service with all needed permissions is granted\
 \- [ ] No open tasks that could block Component development process\
 \- [ ] The E.io’s GitHub repository must be checked if there is another implementation of the component under development. If it exists, new repository should not be created\
-\- [ ] Component architecture should be discussed and approved before start coding\
+\- [ ] Component architecture should be discussed and approved before start coding
 
-\*\*Development:**\
+\*\*Development:\*\*
+
 \- [ ] Code is written and formatted in accordance with the Styling guide\
 \- [ ] Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.\
 \- [ ] Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)\
@@ -296,13 +298,15 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Triggers/actions comply with OIH patterns\
 \- [ ] Documentation (README.md file in the Github) is 100% ready\
 \- [ ] CI is set up\
-\- [ ] All development branches are reviewed\
+\- [ ] All development branches are reviewed
 
-\*\*After QA:**\
+\*\*After QA:\*\*
+
 \- [ ] All development branches are merged into master branch\
-\- [ ] Sprint review preparation is finished (demo flow is built)\
+\- [ ] Sprint review preparation is finished (demo flow is built)
 
-\*\*QA:**\
+\*\*QA:\*\*
+
 \- [ ] Test cases for the component are ready at the TestRail\
 \- [ ] Functional testing is finished\
 \- [ ] Regression testing is finished (optional)\
@@ -311,16 +315,16 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 &nbsp;&nbsp;- Smoke test is finished\
 \- [ ] Release notes are done\
 \- [ ] Component Roadmap is updated\
-\- [ ] Component spreadsheet is updated\
+\- [ ] Component spreadsheet is updated
 
-###Documentation template
+### Documentation template
 \#\<Component name>\
 \##Description\
 \###Purpose\
 \###Completeness Matrix (Completeness Matrix Template)\
 \###How works.  API version / SDK version\
 \###Requirements\
-\####Environment variables\ 
+\####Environment variables\
 \####Others\
 \##Credentials\
 &nbsp;&nbsp;\###field1\
@@ -340,7 +344,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \##Known limitations (common for the component)\
 \##\<External System> API and Documentation links (endpoints)\
 
-####Standard action/trigger description
+#### Standard action/trigger description
 \####List of Expected Config fields\
 \###Expected input metadata\
 \####Expected output metadata\
@@ -350,17 +354,19 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \####Authentication scopes\
 \####Links to documentation
 
-###Integration Application Definition of Done (IA-DoD) template
+### Integration Application Definition of Done (IA-DoD) template
 \*\*DoD**
 
-\*\*Integration application development prerequisites:**\
+\*\*Integration application development prerequisites:\*\*
+
 \- [ ] Development team has access to the source with all requirements\
 \- [ ] Meeting with Platform team representatives (for example Scrum Master) regarding E.IO platform changes (API etc.), which could potentially affect on Integration application development process\
 \- [ ] Access to the needed services with all needed permissions is granted\
 \- [ ] No open tasks that could block Integration application development process\
-\- [ ] Integration application architecture should be discussed and approved before starting coding\
+\- [ ] Integration application architecture should be discussed and approved before starting coding
 
-\*\*Development:**\
+\*\*Development:\*\*
+
 \- [ ] Code is written and formatted in accordance with the Styling guide\
 \- [ ]Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.\
 \- [ ] Integration application logs does not contain any sensitive data (if needed due to requirements)\
@@ -373,24 +379,27 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Documentation:\
 &nbsp;&nbsp;-  Readme.md with sequence diagrams, overview, description and installation manual\
 &nbsp;&nbsp;- Environment variables listing and description (env-vars.md)\
-&nbsp;&nbsp;- Changelogs (CHANGELOG.md)\
+&nbsp;&nbsp;- Changelogs (CHANGELOG.md)
 
-\*\*After QA:**\
+\*\*After QA:\*\*
+
 \- [ ] All development branches are reviewed and merged into master branch\
-\- [ ] Sprint review preparation is finished.\
+\- [ ] Sprint review preparation is finished.
 
-\*\*QA:**\
+\*\*QA:\*\*
+
 \- [ ] Test cases for the Integration application are ready at the TestRail\
 \- [ ] Functional testing is finished\
 \- [ ] Regression testing is finished (optional)\
 \- [ ] Integration application is deployed to the required stage\
 \- [ ] Smoke test is finished\
-\- [ ] Release notes are done\
+\- [ ] Release notes are done.
 
-###Code library Definition of Done (CL-DoD) template
+### Code library Definition of Done (CL-DoD) template
 \*\*DoD**
 
-\*\*Development:**\
+\*\*Development:\*\*
+
 \- [ ] Code is written and formatted in accordance with the Styling guide\
 \- [ ] Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.\
 \- [ ] Code Library logs does not contain any sensitive data (if needed due to requirements)\
