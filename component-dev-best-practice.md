@@ -2,7 +2,7 @@
 
 * [Component development](#component-development)
   * [Component development prerequisites](#component-development-prerequisites)
-  * [Definition of Done (CD-DoD)](#definition-of-done-cd-dod)
+  * [Component Development Definition of Done (CD-DoD)](#component-development-definition-of-done-cd-dod)
     * [Component Development Process](#component-development-process)
     * [Component Development Quality Assurance](#component-development-quality-assurance)
     * [Sprint Review (Demo) Definition of Done (SR-DoD)](#sprint-review-demo-definition-of-done-sr-dod)
@@ -18,12 +18,12 @@
     * [Automated Build Tools](#automated-build-tools)
 * [Integration application development](#integration-application-development)
   * [Integration application development prerequisites](#integration-application-development-prerequisites)
-  * [Definition of Done (IA-DoD)](#definition-of-done-ia-dod)
+  * [Integration application Definition of Done (IA-DoD)](#integration-application-definition-of-done-ia-dod)
     * [Integration application Development Process](#integration-application-development-process)
     * [Integration application Quality Assurance](#integration-application-quality-assurance)
 * [Code Library development](#code-library-development)
   * [Code Library development prerequisites](#code-library-development-prerequisites)
-  * [Definition of Done (CL-DoD)](#definition-of-done-cl-dod)
+  * [Code Library Definition of Done (CL-DoD)](#code-library-definition-of-done-cl-dod)
     * [Code Library Development Process](#code-library-development-process)
     * [Code Library Quality Assurance](#code-library-quality-assurance)
 * [Coding style](#coding-style)
@@ -49,7 +49,7 @@
  * The E.io’s GitHub repository must be checked if there is another implementation of the component under development. If it exists, new repository should not be created
  * Component architecture should be discussed and approved before start coding.
 
-### Definition of Done (CD-DoD)
+### Component Development Definition of Done (CD-DoD)
 You can find a [CD-DoD template here](#component-development-definition-of-done-cd-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
 #### Component Development Process
 * Code is written and formatted in accordance with the [Styling guide](#coding-style)
@@ -148,7 +148,7 @@ Notes for automated build tools:
 * No open tasks that could block Integration application development process
 * Integration application architecture should be discussed and approved before starting coding.
 
-### Definition of Done (IA-DoD)
+### Integration application Definition of Done (IA-DoD)
 You can find an [IA-DoD template here](#integration-application-definition-of-done-ia-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
 #### Integration application Development Process
 * Code is written and formatted in accordance with the Styling guide
@@ -184,7 +184,7 @@ You can find an [IA-DoD template here](#integration-application-definition-of-do
 * No open tasks that could block Code Library development process
 * Code Library architecture should be discussed and approved before start coding.
 
-### Definition of Done (CL-DoD)
+### Code Library Definition of Done (CL-DoD)
 You can find a [CL-DoD template here](#code-library-definition-of-done-cl-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
 #### Code Library Development Process
 * Code is written and formatted in accordance with the Styling guide
