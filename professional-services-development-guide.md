@@ -30,6 +30,7 @@
   * [JavaScript Coding Style](#javascript-coding-style)
     * [Code Quality](#code-quality)
     * [Package.json](#packagejson)
+    
     * [Default Libraries](#default-libraries)
   * [Java Coding Style](#java-coding-style)
     * [Static code analysis](#static-code-analysis)
@@ -342,7 +343,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 &nbsp;&nbsp;&nbsp;&nbsp;\<Standard action/trigger description>\
 \##Additional info (If any)\
 \##Known limitations (common for the component)\
-\##\<External System> API and Documentation links (endpoints)\
+\##\<External System> API and Documentation links (endpoints)
 
 #### Standard action/trigger description
 \####List of Expected Config fields\
