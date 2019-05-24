@@ -12,6 +12,7 @@
     * [Logging](#logging)
     * [Credentials](#credentials)
     * [component.json](#componentjson)
+    * [package.json](#package.json)
     * [Logo](#logo)
     * [License](#license)
     * [Git](#git)
@@ -60,6 +61,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Component code is covered with integration tests (optional)
 * Triggers/actions comply with OIH patterns
 * Documentation (README.md file in the Github) is 100% ready
+* Changelogs (CHANGELOG.md) are created/updated.
 * CI is set up
 * All development branches are reviewed.
 
@@ -94,6 +96,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Un-common edge cases
 * Blocks of non-trivial code that doesn’t talk directly to the external system
 * Tests to verify correct metadata transformation.
+
 #### Integration Tests
 * Designed to run against the API for the component
 * Any data created during integration tests should indicate that it was created by integration tests
@@ -113,6 +116,14 @@ The following pieces of information should be stored in credentials in [BitWarde
 * There should be a description for the component
 * Each action & trigger should have a description
 * Each config field for the credentials, actions and triggers should have a note and placeholder unless obvious (such as for a password)
+
+#### package.json
+* Component version must be specified accordingly, please visit [Semantic Versioning 2.0.0](https://semver.org/) in order to do it in right way
+* Specify dependencies with only specific versions. Dependency ```version``` Must match ```version``` exactly
+
+
+### CHANGELOG.md
+Complete changelogs in accordance with the [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) 
 
 ### Logo
 * The logo file should be a 128 x 128 px PNG file on a transparent background.
@@ -241,7 +252,7 @@ Goals
 * A [pretest script](https://docs.npmjs.com/misc/scripts) should be used to enforce linting. (e.g. eslint verifyCredentials.js lib spec spec-integration --fix) and possibly dependency security vulnerabilities with [npm audit](https://docs.npmjs.com/cli/audit) (previously [nsp](https://www.npmjs.com/package/nsp) was used in some components)
 * A “test” script for integration tests (e.g. mocha spec)
 * An integration-test script for integration tests (e.g. “mocha spec-integration”)
-* Author, keywords, files, engines, name, version and private should be set appropriately 
+* Author, keywords, files, engines, name, version and private should be set appropriately
 
 #### Default Libraries
 * HTTP requests should be made with [request.js](https://www.npmjs.com/package/request)
@@ -298,6 +309,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Component code is covered with integration tests (optional)\
 \- [ ] Triggers/actions comply with OIH patterns\
 \- [ ] Documentation (README.md file in the Github) is 100% ready\
+\- [ ] Changelogs (CHANGELOG.md) are created/updated\
 \- [ ] CI is set up\
 \- [ ] All development branches are reviewed
 
@@ -394,7 +406,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Regression testing is finished (optional)\
 \- [ ] Integration application is deployed to the required stage\
 \- [ ] Smoke test is finished\
-\- [ ] Release notes are done.
+\- [ ] Release notes are done
 
 ### Code library Definition of Done (CL-DoD) template
 \*\*DoD**
