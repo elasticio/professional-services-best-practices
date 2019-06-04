@@ -31,7 +31,6 @@
   * [JavaScript Coding Style](#javascript-coding-style)
     * [Code Quality](#code-quality)
     * [Package.json](#packagejson)
-    
     * [Default Libraries](#default-libraries)
   * [Java Coding Style](#java-coding-style)
     * [Static code analysis](#static-code-analysis)
