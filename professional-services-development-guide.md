@@ -49,7 +49,13 @@
  * No open tasks that could block Component development process
  * The E.io’s GitHub repository must be checked if there is another implementation of the component under development. If it exists, new repository should not be created
  * Component architecture should be discussed and approved before start coding.
-
+ * New component GIT repo preconditions:
+   - repo type (private/public)
+   - license type
+ * Component deployment preconditions:
+   - Where to deploy (app.elastic.io etc..)
+   - Component's access level on each installation that component must be deployed on
+ 
 ### Component Development Definition of Done (CD-DoD)
 You can find a [CD-DoD template here](#component-development-definition-of-done-cd-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
 #### Component Development Process
@@ -75,6 +81,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Regression testing is finished (optional).
 * Component is deployed to the production stage (app.elastic.io) and/or other required stage.
   * Component has a proper access level
+  * Required Environment Variables are set
   * Smoke test is finished
 * Release notes are done
 * Component Roadmap is updated.
@@ -117,10 +124,9 @@ The following pieces of information should be stored in credentials in [BitWarde
 * Each action & trigger should have a description
 * Each config field for the credentials, actions and triggers should have a note and placeholder unless obvious (such as for a password)
 
-#### package.json
+### package.json
 * Component version must be specified accordingly, please visit [Semantic Versioning 2.0.0](https://semver.org/) in order to do it in right way
 * Specify dependencies with only specific versions. Dependency ```version``` Must match ```version``` exactly
-
 
 ### CHANGELOG.md
 Complete changelogs in accordance with the [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) 
@@ -298,7 +304,13 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Access to the needed service with all needed permissions is granted\
 \- [ ] No open tasks that could block Component development process\
 \- [ ] The E.io’s GitHub repository must be checked if there is another implementation of the component under development. If it exists, new repository should not be created\
-\- [ ] Component architecture should be discussed and approved before start coding
+\- [ ] Component architecture should be discussed and approved before start coding\
+\- [ ] New component GIT repo preconditions:\
+&nbsp;&nbsp;- repo type (private/public)\
+&nbsp;&nbsp;- license type\
+\- [ ] Component deployment preconditions:\
+&nbsp;&nbsp;- Where to deploy (app.elastic.io etc..)\
+&nbsp;&nbsp;- Component's access level on each installation that component must be deployed on\
 
 \*\*Development:\*\*
 
@@ -326,6 +338,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Regression testing is finished (optional)\
 \- [ ] Component is deployed to the production stage (app.elastic.io) and/or other required stage\
 &nbsp;&nbsp;- Component has a proper access level\
+&nbsp;&nbsp;- Required Environment Variables are set\
 &nbsp;&nbsp;- Smoke test is finished\
 \- [ ] Release notes are done\
 \- [ ] Component Roadmap is updated\
