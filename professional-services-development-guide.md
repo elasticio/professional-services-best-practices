@@ -12,7 +12,7 @@
     * [Logging](#logging)
     * [Credentials](#credentials)
     * [component.json](#componentjson)
-    * [package.json](#package.json)
+    * [package.json](#packagejson)
     * [Logo](#logo)
     * [License](#license)
     * [Git](#git)
