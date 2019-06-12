@@ -37,7 +37,7 @@
     * [Test coverage](#test-coverage)
 * [Templates](#templates)
   * [Component Development Definition of Done (CD-DoD) template](#component-development-definition-of-done-cd-dod-template)
-  * [Documentation template](#documentation-template)
+  * [README.md template](#documentation-template)
     * [Standard action/trigger description](#standard-actiontrigger-description)
   * [Integration Application Definition of Done (IA-DoD) template](#integration-application-definition-of-done-ia-dod-template)
   * [Code library Definition of Done (CL-DoD) template](#code-library-definition-of-done-cl-dod-template)
@@ -83,7 +83,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
   * Component has a proper access level
   * Required Environment Variables are set
   * Smoke test is finished
-* Release notes are done
+* Release notes is done
 * Component Roadmap is updated.
 * Component spreadsheet is updated
 
@@ -192,7 +192,7 @@ You can find an [IA-DoD template here](#integration-application-definition-of-do
 * Regression testing is finished (optional)
 * Integration application is deployed to the required stage
   * Smoke test is finished
-* Release notes are done.
+* Release notes is done.
 
 ## Code Library development
 ### Code Library development prerequisites
@@ -340,11 +340,11 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 &nbsp;&nbsp;- Component has a proper access level\
 &nbsp;&nbsp;- Required Environment Variables are set\
 &nbsp;&nbsp;- Smoke test is finished\
-\- [ ] Release notes are done\
+\- [ ] Release notes is done\
 \- [ ] Component Roadmap is updated\
 \- [ ] Component spreadsheet is updated
 
-### Documentation template
+### README.md template
 \#\<Component name>\
 \##Description\
 \###Purpose\
@@ -420,7 +420,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Regression testing is finished (optional)\
 \- [ ] Integration application is deployed to the required stage\
 \- [ ] Smoke test is finished\
-\- [ ] Release notes are done
+\- [ ] Release notes is done
 
 ### Code library Definition of Done (CL-DoD) template
 \*\*DoD**
