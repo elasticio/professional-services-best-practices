@@ -37,7 +37,7 @@
     * [Test coverage](#test-coverage)
 * [Templates](#templates)
   * [Component Development Definition of Done (CD-DoD) template](#component-development-definition-of-done-cd-dod-template)
-  * [README.md template](#documentation-template)
+  * [README.md template](#readmemd-template)
     * [Standard action/trigger description](#standard-actiontrigger-description)
   * [Integration Application Definition of Done (IA-DoD) template](#integration-application-definition-of-done-ia-dod-template)
   * [Code library Definition of Done (CL-DoD) template](#code-library-definition-of-done-cl-dod-template)
