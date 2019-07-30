@@ -345,8 +345,8 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Component spreadsheet is updated
 
 ### README.md template
-\#<Component name>\
-\##Table of Contents\
+\#Component name\
+\##Table of Contents
 
 ```
 * [General information](#general-information)
