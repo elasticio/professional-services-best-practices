@@ -370,40 +370,40 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 * [Known Limitations](#known-limitations)
 * [<External System> API and Documentation links](#<external system>-api-and-documentation-links)
 ```
-\##Description\
-\###Purpose\
-\###Completeness Matrix (Completeness Matrix Template)\
-\###How works.  API version / SDK version\
-\###Requirements\
-\####Environment variables\
-\####Others\
-\##Credentials\
-&nbsp;&nbsp;\###field1\
-&nbsp;&nbsp;\###field2\
+\## Description\
+\### Purpose\
+\### Completeness Matrix (Completeness Matrix Template)\
+\### How works.  API version / SDK version\
+\### Requirements\
+\#### Environment variables\
+\#### Others\
+\## Credentials\
+&nbsp;&nbsp;\### field1\
+&nbsp;&nbsp;\### field2\
 &nbsp;&nbsp;\...\
-\##Triggers (if any)\
-&nbsp;&nbsp;\###Trigger1\
+\## Triggers (if any)\
+&nbsp;&nbsp;\### Trigger1\
 &nbsp;&nbsp;&nbsp;&nbsp;\<Standard action/trigger description>\
-&nbsp;&nbsp;\###Trigger2\
+&nbsp;&nbsp;\### Trigger2\
 &nbsp;&nbsp;&nbsp;&nbsp;\<Standard action/trigger description>\
-\##Actions (if any)\
-&nbsp;&nbsp;\###Action1\
+\## Actions (if any)\
+&nbsp;&nbsp;\### Action1\
 &nbsp;&nbsp;&nbsp;&nbsp;\<Standard action/trigger description>\
-&nbsp;&nbsp;\###Action2\
+&nbsp;&nbsp;\### Action2\
 &nbsp;&nbsp;&nbsp;&nbsp;\<Standard action/trigger description>\
-\##Additional info (If any)\
-\##Known limitations (common for the component)\
-\##\<External System> API and Documentation links (endpoints)
+\## Additional info (If any)\
+\## Known limitations (common for the component)\
+\## \<External System> API and Documentation links (endpoints)
 
 #### Standard action/trigger description
-\####List of Expected Config fields\
-\###Expected input metadata\
-\####Expected output metadata\
-\####Sample pseudo-code (optional)\
-\####Standardize Names (Human readable + Machine readable)\
-\####Known limitations for the particular trigger/action / Planned future stages\
-\####Authentication scopes\
-\####Links to documentation
+\#### List of Expected Config fields\
+\### Expected input metadata\
+\#### Expected output metadata\
+\#### Sample pseudo-code (optional)\
+\#### Standardize Names (Human readable + Machine readable)\
+\#### Known limitations for the particular trigger/action / Planned future stages\
+\#### Authentication scopes\
+\#### Links to documentation
 
 ### Integration Application Definition of Done (IA-DoD) template
 \*\*DoD**
