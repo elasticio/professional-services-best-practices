@@ -345,6 +345,10 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Component spreadsheet is updated
 
 ### README.md template
+
+`[![CircleCI](https://circleci.com/gh/elasticio/component)](https://circleci.com/gh/elasticio/component)`
+`[![Build Status][travis-image]][travis-url]`
+
 \# Component name\
 \## Table of Contents
 
