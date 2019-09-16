@@ -66,7 +66,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Component code is covered with integration tests (optional)
 * Triggers/actions comply with OIH patterns
 * Documentation (README.md file in the Github) is 100% ready
-* Changelogs (CHANGELOG.md) are created/updated.
+* Changelogs (CHANGELOG.md) are created/updated. We use [This format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
 * Component's version is updated in `package.json` according to [Semantic Versioning 2.0.0](https://semver.org/)
 * CI is set up
 * All development branches are reviewed.
