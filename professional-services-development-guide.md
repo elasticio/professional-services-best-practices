@@ -66,8 +66,11 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Component code is covered with integration tests (optional)
 * Triggers/actions comply with OIH patterns
 * Documentation (README.md file in the Github) is 100% ready
-* Changelogs (CHANGELOG.md) are created/updated. We use [this format](https://github.com/facebook/react/blob/master/CHANGELOG.md) as a standard.
-* Component's version is updated in `package.json` according to [Semantic Versioning 2.0.0](https://semver.org/)
+* Changelogs (CHANGELOG.md) are created/updated. We use [This format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
+* `package.json` or `build.gradle` is updated:
+  * Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)
+  * Component should be dockerised, add: `"buildType":"docker"`
+
 * CI is set up
 * All development branches are reviewed.
 
@@ -323,7 +326,9 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 \- [ ] Triggers/actions comply with OIH patterns\
 \- [ ] Documentation (README.md file in the Github) is 100% ready\
 \- [ ] Changelogs (CHANGELOG.md) are created/updated\
-\- [ ] Component's version is updated in `package.json` according to [Semantic Versioning 2.0.0](https://semver.org/)\
+\- [ ] `package.json` or `build.gradle` is updated:\
+&nbsp;&nbsp;- Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)\
+&nbsp;&nbsp;- Component should be dockerised, add: `"buildType":"docker"`\
 \- [ ] CI is set up\
 \- [ ] All development branches are reviewed
 
