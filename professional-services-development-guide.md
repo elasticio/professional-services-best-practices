@@ -66,7 +66,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Component code is covered with integration tests (optional)
 * Triggers/actions comply with OIH patterns
 * Documentation (README.md file in the Github) is 100% ready
-* Changelogs (CHANGELOG.md) are created/updated. We use [This format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
+* Changelogs (CHANGELOG.md) are created/updated. We use [this format](https://github.com/facebook/react/blob/master/CHANGELOG.md) as a standard.
 * Component's version is updated in `package.json` according to [Semantic Versioning 2.0.0](https://semver.org/)
 * CI is set up
 * All development branches are reviewed.
@@ -242,7 +242,8 @@ Goals
 * Const is preferred over let.  Using var or undeclared variables should be avoided.
 * Currently Version 8 of Node.js is the preferred version
 * Eslint shout be used to enforce code quality/act as an early detector of bugs
-  * [The platform team uses eslint:recommended with plugin:node/recommended](https://github.com/elasticio/capybara/blob/master/.eslintrc)
+  * The PS team follows Airbnb style guidelines: [see more here](https://github.com/airbnb/javascript)
+    * [Here are the PS team WebStorm settings](https://github.com/elasticio/ps-webstorm-settings)
   * Eslint may also require plugins for [mocha](https://www.npmjs.com/package/eslint-plugin-mocha) and [Sinon](https://www.npmjs.com/package/eslint-plugin-sinon)
 * Code structure should be as follows:
   * verifyCredentials.js should be at the root of the repo
