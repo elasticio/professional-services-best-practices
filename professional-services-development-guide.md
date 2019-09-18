@@ -245,7 +245,8 @@ Goals
 * Const is preferred over let.  Using var or undeclared variables should be avoided.
 * Currently Version 8 of Node.js is the preferred version
 * Eslint shout be used to enforce code quality/act as an early detector of bugs
-  * [The platform team uses eslint:recommended with plugin:node/recommended](https://github.com/elasticio/capybara/blob/master/.eslintrc)
+  * The PS team follows Airbnb style guidelines: [see more here](https://github.com/airbnb/javascript)
+    * [Here are the PS team WebStorm settings](https://github.com/elasticio/ps-webstorm-settings)
   * Eslint may also require plugins for [mocha](https://www.npmjs.com/package/eslint-plugin-mocha) and [Sinon](https://www.npmjs.com/package/eslint-plugin-sinon)
 * Code structure should be as follows:
   * verifyCredentials.js should be at the root of the repo
