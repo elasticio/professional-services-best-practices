@@ -64,7 +64,7 @@ You can find a [CD-DoD template here](#component-development-definition-of-done-
 * Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)
 * Code is covered with unit tests
 * Component code is covered with integration tests (optional)
-* Triggers/actions comply with OIH patterns
+* Triggers/actions comply with [OIH patterns](https://github.com/elasticio/Connectors/blob/master/Adapters/AdapterBehaviorStandardization/StandardizedActionsAndTriggers.md)
 * Documentation (README.md file in the Github) is 100% ready
 * Changelogs (CHANGELOG.md) are created/updated. We use [This format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
 * `package.json` or `build.gradle` is updated:
