@@ -1,7 +1,7 @@
 # Elastic.io Professional services team Development guide
 
-* [Component development](#component-development)
-  * [Component development Definition of Ready (CD-DoR)](#component-development-definition-of-ready)
+* [Component Development](#component-development)
+  * [Component Development Definition of Ready (CD-DoR)](#component-development-definition-of-ready-cd-dor)
   * [Component Development Definition of Done (CD-DoD)](#component-development-definition-of-done-cd-dod)
     * [Component Development Process](#component-development-process)
     * [Component Development Quality Assurance](#component-development-quality-assurance)
@@ -42,8 +42,8 @@
   * [Integration Application Definition of Done (IA-DoD) template](#integration-application-definition-of-done-ia-dod-template)
   * [Code library Definition of Done (CL-DoD) template](#code-library-definition-of-done-cl-dod-template)
 
-## Component development 
-### Component development Definition of Ready (CD-DoR)
+## Component Development 
+### Component Development Definition of Ready (CD-DoR)
  * Development team has all needed requirements
  * Access to the needed service with all needed permissions is granted
  * No open tasks that could block Component development process
