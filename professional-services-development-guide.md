@@ -1,7 +1,7 @@
 # Elastic.io Professional services team Development guide
 
 * [Component development](#component-development)
-  * [Component development prerequisites](#component-development-prerequisites)
+  * [Component development Definition of Ready (CD-DoR)](#component-development-definition-of-ready)
   * [Component Development Definition of Done (CD-DoD)](#component-development-definition-of-done-cd-dod)
     * [Component Development Process](#component-development-process)
     * [Component Development Quality Assurance](#component-development-quality-assurance)
@@ -43,7 +43,7 @@
   * [Code library Definition of Done (CL-DoD) template](#code-library-definition-of-done-cl-dod-template)
 
 ## Component development 
-### Component development prerequisites
+### Component development Definition of Ready (CD-DoR)
  * Development team has all needed requirements
  * Access to the needed service with all needed permissions is granted
  * No open tasks that could block Component development process
@@ -59,6 +59,7 @@
 ### Component Development Definition of Done (CD-DoD)
 You can find a [CD-DoD template here](#component-development-definition-of-done-cd-dod-template). It can be (should be) put into a GitHub issue so that each item could be checked and marked as Done.
 #### Component Development Process
+* All the branches if the repo should be checked (merged/deleted if possible) before starting development.
 * Code is written and formatted in accordance with the [Styling guide](#coding-style)
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)
@@ -304,6 +305,7 @@ Templates to paste into each (main, not sub-) GitHub task in order to check the 
 
 \*\*Component development prerequisites:\*\*
 
+\- [ ] All the branches if the repo should be checked (merged/deleted if possible) before starting development\
 \- [ ] Development team has all needed requirements\
 \- [ ] Access to the needed service with all needed permissions is granted\
 \- [ ] No open tasks that could block Component development process\
