@@ -3,6 +3,7 @@
 
 \*\*Component development prerequisites:\*\*
 
+\- [ ] All the branches if the repo should be checked (merged/deleted if possible) before starting development\
 \- [ ] Development team has all needed requirements\
 \- [ ] Access to the needed service with all needed permissions is granted\
 \- [ ] No open tasks that could block Component development process\

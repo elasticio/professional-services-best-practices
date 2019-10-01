@@ -2,7 +2,7 @@
 
 ## Table of Contents
 * [Component Development](#component-development)
-  * [Development Prerequisites](#component-development-prerequisites)
+  * [Component Development Definition of Ready (CD-DoR)](#component-development-definition-of-ready-cd-dor)
   * [Definition of Done (CD-DoD)](#component-development-definition-of-done-cd-dod)
     * [Development Process](#component-development-process)
     * [Quality Assurance](#component-development-quality-assurance)
@@ -33,8 +33,7 @@
   * [Java](#java-coding-style)
 
 # Component Development 
-## Component Development prerequisites
-All of these points should be resolved before beginning development on a new component:
+## Component Development Definition of Ready (CD-DoR)
  * Development team has all needed requirements
  * Access to the needed service with all needed permissions is granted
  * No open tasks that could block component development process
@@ -50,6 +49,7 @@ All of these points should be resolved before beginning development on a new com
 ## Component Development Definition of Done (CD-DoD)
 You can find the CD-DoD template in templates.md. It should be put into a GitHub issue so that each item could be checked and marked as Done.
 ### Component Development Process
+* All the branches if the repo should be checked (merged/deleted if possible) before starting development.
 * Code is written and formatted in accordance with the [styling guide](#coding-style)
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)
