@@ -1,7 +1,6 @@
 # README[]().md template
 
 `[![CircleCI](https://circleci.com/gh/elasticio/component)](https://circleci.com/gh/elasticio/component)`
-`[![Build Status][travis-image]][travis-url]`
 
 \# Component name\
 \## Table of Contents
