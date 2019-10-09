@@ -142,18 +142,15 @@ Complete changelogs in accordance with the [keepachangelog.com](https://keepacha
 * Whitespace should be consistent through automated tools such as .editorconfig and .gitattribues files.
 
 ## Automated Build Tools
-There are two automated build tools used at elastic.io:
-* [Circle CI](https://circleci.com/dashboard) for closed source repositories
-* [Travis CI](https://travis-ci.org/) for open source repositories.
-Login to build tools is through your GitHub account
+We use [Circle CI](https://circleci.com/dashboard) as an automated build tool at elastic.io.  
+Login to build tools is through your GitHub account.
 
 Notes for automated build tools:
 * Builds may have to be enabled the first time by someone with admin permissions in GitHub
-* Depending on the build tool, additional config files may have to be checked into source code. (e.g. .circleci & circle.yml for CircleCI, .travis.yml for Travis CI)
+* Depending on the build tool, additional config files may have to be checked into source code. (e.g. .circleci & circle.yml for CircleCI)
 * Environment variables need to be configured in the build
 * Build tools produce badge icons that should be embedded into a component's README
   * [Details for Circle CI](https://circleci.com/docs/2.0/status-badges/)
-  * [Details for Travis CI](https://docs.travis-ci.com/user/status-images/)
 
 # Integration application development
 ## Integration application development prerequisites
