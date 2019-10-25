@@ -1,6 +1,8 @@
 ## 1.0.0 (January 01, 2019)
 
-### Commit Version `commit_hash`
+### Commit Version 
+
+`commit_hash_id`
 
 ### General Changes
 
