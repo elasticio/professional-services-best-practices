@@ -18,6 +18,7 @@
     * [License](#license)
     * [Git](#git)
     * [Automated Build Tools](#automated-build-tools)
+    * [Component Completeness Matrix](#component-completeness-matrix)
 * [Integration application development](#integration-application-development)
   * [Development Prerequisites](#integration-application-development-prerequisites)
   * [Definition of Done (IA-DoD)](#integration-application-definition-of-done-ia-dod)
@@ -151,6 +152,11 @@ Notes for automated build tools:
 * Environment variables need to be configured in the build
 * Build tools produce badge icons that should be embedded into a component's README
   * [Details for Circle CI](https://circleci.com/docs/2.0/status-badges/)
+
+## Component Completeness Matrix
+* Component completeness matrices should be stored in [this Google Drive Folder](https://drive.google.com/drive/folders/1PsDpiCHS4MPlYFgGpnkusGenMUp2nTYD).
+* The template file is located [here](https://drive.google.com/open?id=1pgJYPFaZF160fcFf0wK1h2dAZ5_96qVPD6N7eY8GXbY).
+* A screenshot should be copied into the components readme once completed.
 
 # Integration application development
 ## Integration application development prerequisites
