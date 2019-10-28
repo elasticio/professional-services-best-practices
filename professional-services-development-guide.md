@@ -14,6 +14,7 @@
     * [Credentials](#credentials)
     * [component.json](#componentjson)
     * [package.json](#packagejson)
+    * [CHANGELOG.md](#CHANGELOG.md)
     * [Logo](#logo)
     * [License](#license)
     * [Git](#git)
@@ -125,7 +126,8 @@ The following pieces of information should be stored in credentials in [BitWarde
 * Specify dependencies with only specific versions. Dependency ```version``` must match ```version``` exactly
 
 ## CHANGELOG.md
-Complete changelogs in accordance with the [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) 
+* Change version must be the same as in `package.json` 
+* Please use [this template](https://github.com/elasticio/professional-services-best-practices/blob/CHANGELOG-template-upd/templates/CHANGELOG.md) for new changelogs.
 
 ## Logo
 * The logo file should be a 128 x 128 px PNG file on a transparent background.
