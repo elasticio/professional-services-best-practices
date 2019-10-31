@@ -127,7 +127,7 @@ The following pieces of information should be stored in credentials in [BitWarde
 
 ## CHANGELOG.md
 * Change version must be the same as in `package.json` 
-* Please use [this template](https://github.com/elasticio/professional-services-best-practices/blob/CHANGELOG-template-upd/templates/CHANGELOG.md) for new changelogs.
+* Please use [this template](https://github.com/elasticio/professional-services-best-practices/blob/master/templates/CHANGELOG.md) for new changelogs.
 
 ## Logo
 * The logo file should be a 128 x 128 px PNG file on a transparent background.
