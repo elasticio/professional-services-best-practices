@@ -14,7 +14,7 @@
     * [Credentials](#credentials)
     * [component.json](#componentjson)
     * [package.json](#packagejson)
-    * [CHANGELOG.md](#CHANGELOG.md)
+    * [CHANGELOG.md](#CHANGELOGmd)
     * [Logo](#logo)
     * [License](#license)
     * [Git](#git)
