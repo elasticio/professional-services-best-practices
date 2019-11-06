@@ -62,7 +62,7 @@ You can find the CD-DoD template in templates.md. It should be put into a GitHub
 * Changelogs (CHANGELOG.md) are created/updated. We use [this format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
 * `package.json` or `build.gradle` is updated:
   * Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)
-  * Component should be dockerised, add: `"buildType":"docker"`
+* Component should be dockerised, add: `"buildType":"docker"` line into `component.json`
 * CI is set up (see more [here](#automated-build-tools))
 * All development branches are reviewed.
 

@@ -28,7 +28,7 @@
 \- [ ] Changelogs (CHANGELOG.md) are created/updated\
 \- [ ] `package.json` or `build.gradle` is updated:\
 &nbsp;&nbsp;- Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)\
-&nbsp;&nbsp;- Component should be dockerised, add: `"buildType":"docker"`\
+\- [ ] Component should be dockerised, add: `"buildType":"docker"` line into `component.json`\
 \- [ ] CI is set up\
 \- [ ] All development branches are reviewed
 
