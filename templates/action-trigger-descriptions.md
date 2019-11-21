@@ -1,6 +1,6 @@
 # Standard Action/Trigger Descriptions
 \#### List of Expected Config fields\
-\### Expected input metadata\
+\#### Expected input metadata\
 \#### Expected output metadata\
 \#### Sample pseudo-code (optional)\
 \#### Standardize Names (Human readable + Machine readable)\
