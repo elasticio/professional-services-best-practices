@@ -1,9 +1,5 @@
 ## 1.0.0 (January 01, 2019)
 
-### Commit Version 
-
-`commit_hash_id`
-
 ### General Changes
 
 * This is new general component/service feature description #1
