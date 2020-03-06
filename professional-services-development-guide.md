@@ -64,7 +64,8 @@ You can find the CD-DoD template in templates.md. It should be put into a GitHub
   * Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)
 * Component should be dockerised, add: `"buildType":"docker"` line into `component.json`
 * CI is set up (see more [here](#automated-build-tools))
-* All development branches are reviewed.
+* All development branches are reviewed
+* The general list of components is updated with all the changes: Sailor version, build type, etc. Including cases where component needs an additional setup for OEM clients (Like Google app, OAuth2 clients, etc.). [Link to the components list](https://docs.google.com/spreadsheets/d/1sEFpWfJNy3uWPSMlg9NrCK5AUlyfUmpjVIgUjovOuVw/edit?usp=sharing).
 
 After QA:
 * All development branches are merged into master branch
