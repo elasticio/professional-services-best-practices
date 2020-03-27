@@ -12,40 +12,37 @@
 \- [ ] New component GIT repo preconditions:\
 &nbsp;&nbsp;- repo type (private/public)\
 &nbsp;&nbsp;- license type\
-\- [ ] Component deployment preconditions:\
-&nbsp;&nbsp;- Where to deploy (app.elastic.io etc..)\
-&nbsp;&nbsp;- Component's access level on each installation that component must be deployed on\
 
 \*\*Development:\*\*
 
 \- [ ] Code is written and formatted in accordance with the Styling guide\
 \- [ ] Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.\
-\- [ ] Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)\
+\- [ ] Component logs does not contain any sensitive data (credentials, input/output requests, environment variables)\
 \- [ ] Code is covered with unit tests\
 \- [ ] Component code is covered with integration tests (optional)\
-\- [ ] Triggers/actions comply with OIH patterns\
-\- [ ] Documentation (README.md file in the Github) is 100% ready\
-\- [ ] Changelogs (CHANGELOG.md) are created/updated\
+\- [ ] Triggers/actions comply with ex-OIH patterns\
+\- [ ] Component documentation (currently README.md file in the Github) is 100% ready\
+\- [ ] Changelogs (CHANGELOG.md) are created/updated:\
+&nbsp;&nbsp;- Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)\
 \- [ ] `package.json` or `build.gradle` is updated:\
 &nbsp;&nbsp;- Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)\
+&nbsp;&nbsp;- Component version in package.json should match component version in CHANGELOG.md\
 \- [ ] Component should be dockerised, add: `"buildType":"docker"` line into `component.json`\
 \- [ ] CI is set up\
 \- [ ] All development branches are reviewed
 
 \*\*After QA:\*\*
 
-\- [ ] All development branches are merged into master branch\
-\- [ ] Sprint review preparation is finished (demo flow is built)
+\- [ ] All needed development branches are merged into master branch\
+\- [ ] Support is notified in #Support and #Docs channels that component is ready to be deployed and docs should be updated on docs.elastic.io after all needed development branches are merged into master branch\
+\- [ ] Sprint review preparation is finished (demo flow is built)\
 
 \*\*QA:\*\*
 
 \- [ ] Test cases for the component are ready at the TestRail\
 \- [ ] Functional testing is finished\
 \- [ ] Regression testing is finished (optional)\
-\- [ ] Component is deployed to the production stage (app.elastic.io) and/or other required stage\
-&nbsp;&nbsp;- Component has a proper access level\
-&nbsp;&nbsp;- Required Environment Variables are set\
-&nbsp;&nbsp;- Smoke test is finished\
-\- [ ] Release notes is done\
-\- [ ] Component Roadmap is updated\
-\- [ ] Component spreadsheet is updated
+\- [ ] Release notes and Agenda are done\
+\- [ ] Component spreadsheet is updated\
+\- [ ] Smoke is done after component updated on Production\
+\- [ ] Docs reviewed after support update them on docs.elastic.io\
