@@ -51,13 +51,13 @@
 ## Component Development Definition of Done (CD-DoD)
 You can find the CD-DoD template in templates.md. It should be put into a GitHub issue so that each item could be checked and marked as Done.
 ### Component Development Process
-* All the branches if the repo should be checked (merged/deleted if possible) before starting development.
+* All the branches of the repo should be checked (merged/deleted if possible) before starting development.
 * Code is written and formatted in accordance with the [styling guide](#coding-style)
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)
 * Code is covered with unit tests
 * Component code is covered with integration tests (optional)
-* Triggers/actions comply with [OIH patterns](https://github.com/elasticio/Connectors/blob/master/Adapters/AdapterBehaviorStandardization/StandardizedActionsAndTriggers.md)
+* Triggers/actions comply with [OIH patterns](https://github.com/elasticio/Connectors/blob/master/Adapters/AdapterBehaviorStandardization/StandardizedActionsAndTriggers.md). Even though OIH is not alive anymore, it is still a best practice to follow
 * Documentation (README.md file in the Github) is 100% ready
 * Changelogs (CHANGELOG.md) are created/updated. We use [this format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
 * `package.json` or `build.gradle` is updated:
@@ -65,6 +65,7 @@ You can find the CD-DoD template in templates.md. It should be put into a GitHub
 * Component should be dockerised, add: `"buildType":"docker"` line into `component.json`
 * CI is set up (see more [here](#automated-build-tools))
 * All development branches are reviewed
+* Support and documentation teams are notified about component updates in appropriate Slack channels
 * The general list of components is updated with all the changes: Sailor version, build type, etc. Including cases where component needs an additional setup for OEM clients (Like Google app, OAuth2 clients, etc.). [Link to the components list](https://docs.google.com/spreadsheets/d/1sEFpWfJNy3uWPSMlg9NrCK5AUlyfUmpjVIgUjovOuVw/edit?usp=sharing).
 
 After QA:
@@ -90,7 +91,6 @@ After QA:
 Demo flow specifications:
 * Name of demo-flow is meaningful and understandable and displays the purpose of the action/trigger (don't use 'Give me a name')
 * Demo-flow represents real use-case of the component
-* Timer component is not used for actions
 * All the env vars are created and configured
 * `EIO_REQUIRED_RAM_MB` var is configured if needed
 * Configure external systems if needed (create Items, Customers, enable web service access etc.).
@@ -118,8 +118,7 @@ The following pieces of information should be stored in credentials in [BitWarde
 * OAuth keys (including any test keys), if applicable
 
 ## component.json
-* There should be a description for the component
-* Each action & trigger should have a description
+* There should be a description/help links for the component where it's possible and makes sense
 * Each config field for the credentials, actions and triggers should have a note and placeholder unless obvious (such as for a password)
 
 ## package.json
