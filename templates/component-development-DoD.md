@@ -3,7 +3,7 @@
 
 \*\*Component development prerequisites:\*\*
 
-\- [ ] All the branches if the repo should be checked (merged/deleted if possible) before starting development\
+\- [ ] All the branches of the repo should be checked (merged/deleted if possible) before starting development\
 \- [ ] Development team has all needed requirements\
 \- [ ] Access to the needed service with all needed permissions is granted\
 \- [ ] No open tasks that could block Component development process\
@@ -29,7 +29,8 @@
 &nbsp;&nbsp;- Component version in package.json should match component version in CHANGELOG.md\
 \- [ ] Component should be dockerised, add: `"buildType":"docker"` line into `component.json`\
 \- [ ] CI is set up\
-\- [ ] All development branches are reviewed
+\- [ ] All development branches are reviewed\
+\- [ ] Support and documentation teams are notified about component updates in appropriate Slack channels
 
 \*\*After QA:\*\*
 
