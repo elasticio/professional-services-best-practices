@@ -54,7 +54,7 @@ You can find the CD-DoD template in templates.md. It should be put into a GitHub
 * All the branches of the repo should be checked (merged/deleted if possible) before starting development.
 * Code is written and formatted in accordance with the [styling guide](#coding-style)
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
-* Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)
+* Component logs at any level must contain no sensitive data (credentials, input/output requests, Environment variables)
 * Code is covered with unit tests
 * Component code is covered with integration tests (optional)
 * Triggers/actions comply with [OIH patterns](https://github.com/elasticio/Connectors/blob/master/Adapters/AdapterBehaviorStandardization/StandardizedActionsAndTriggers.md). Even though OIH is not alive anymore, it is still a best practice to follow
