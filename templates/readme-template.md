@@ -9,7 +9,7 @@
 * [General information](#general-information)
    * [Description](#description)
    * [Completeness Matrix](#completeness-matrix)
-   * [API version / SDK version](#api-version-/-sdk-version)
+   * [API version / SDK version](#api-version--sdk-versio)
    * [Requirements](#requirements)
    * [Environment variables](#environment-variables)
    * [<External System> environment configuration]
