@@ -34,7 +34,7 @@
   * [JavaScript](#javascript-coding-style)
   * [Java](#java-coding-style)
 
-# Component Development 
+# Component Development
 ## Component Development Definition of Ready (CD-DoR)
  * Development team has all needed requirements
  * Access to the needed service with all needed permissions is granted
@@ -47,14 +47,15 @@
  * Component deployment preconditions:
    - Where to deploy (app.elastic.io etc..)
    - Component's access level on each installation that component must be deployed on
- 
+
 ## Component Development Definition of Done (CD-DoD)
 You can find the CD-DoD template in templates.md. It should be put into a GitHub issue so that each item could be checked and marked as Done.
 ### Component Development Process
 * All the branches of the repo should be checked (merged/deleted if possible) before starting development.
 * Code is written and formatted in accordance with the [styling guide](#coding-style)
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
-* Component logs at any level must contain no sensitive data (credentials, input/output requests, Environment variables)
+* Component logs does not contain any sensitive data (credentials, input/output requests, Environment variables)
+* Code does not contain vulnerabilities. It can be checked with `npm audit` command. For old components low or moderate vulnerabilities are acceptable, but new one should be developed without any incl. low.
 * Code is covered with unit tests
 * Component code is covered with integration tests (optional)
 * Triggers/actions comply with [OIH patterns](https://github.com/elasticio/Connectors/blob/master/Adapters/AdapterBehaviorStandardization/StandardizedActionsAndTriggers.md). Even though OIH is not alive anymore, it is still a best practice to follow
@@ -126,7 +127,7 @@ The following pieces of information should be stored in credentials in [BitWarde
 * Specify dependencies with only specific versions. Dependency ```version``` must match ```version``` exactly
 
 ## CHANGELOG.md
-* Change version must be the same as in `package.json` 
+* Change version must be the same as in `package.json`
 * Please use [this template](https://github.com/elasticio/professional-services-best-practices/blob/master/templates/CHANGELOG.md) for new changelogs.
 
 ## Logo
@@ -145,7 +146,7 @@ The following pieces of information should be stored in credentials in [BitWarde
 * Whitespace should be consistent through automated tools such as .editorconfig and .gitattribues files.
 
 ## Automated Build Tools
-We use [Circle CI](https://circleci.com/dashboard) as an automated build tool at elastic.io.  
+We use [Circle CI](https://circleci.com/dashboard) as an automated build tool at elastic.io.
 Login to build tools is through your GitHub account.
 
 Notes for automated build tools:
@@ -153,6 +154,7 @@ Notes for automated build tools:
 * Depending on the build tool, additional config files may have to be checked into source code. (e.g. .circleci & circle.yml for CircleCI)
 * Environment variables need to be configured in the build
 * Build tools produce badge icons that should be embedded into a component's README
+* Build must include vulnerabilities check. Vulnerabilities with severity 'high' or 'critical' must fail the build
   * [Details for Circle CI](https://circleci.com/docs/2.0/status-badges/)
 
 ## Component Completeness Matrix
@@ -174,15 +176,16 @@ You can find an IA-DoD template in templates.md. It should be put into your GitH
 * Code is written and formatted in accordance with the styling guide
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Integration application logs does not contain any sensitive data (if needed due to requirements)
+* Code does not contain vulnerabilities. It can be checked with `npm audit` command. For old components low or moderate vulnerabilities are acceptable, but new one should be developed without any incl. low.
 * Code is covered with unit tests
 * Code is covered with integration tests
 * Continuous deployment:
   * Publish script
   * Secrets
   * k8s descriptors
-* Documentation 
+* Documentation
   * Readme.md with sequence diagrams, overview, description and installation manual
-  * Environment variables listing and description (env-vars.md) Changelogs (CHANGELOG.md). 
+  * Environment variables listing and description (env-vars.md) Changelogs (CHANGELOG.md).
 
 After QA:
 * All development branches are reviewed and merged into master branch
@@ -210,12 +213,13 @@ You can find a CL-DoD template in templates.md. It should be put into your GitHu
 * Code is written and formatted in accordance with the [styling guide](#coding-style)
 * Code (incl. configs, test samples, environment variables etc.) MUST NOT contain any sensitive data like passwords, tokens, API keys etc.
 * Code Library logs does not contain any sensitive data (if needed due to requirements)
+* Code does not contain vulnerabilities. It can be checked with `npm audit` command. For old components low or moderate vulnerabilities are acceptable, but new one should be developed without any incl. low.
 * Code is covered with unit tests
 * Code is covered with integration tests
 * Continuous Integration is set up for tests
-* Documentation 
+* Documentation
   * Readme.md with sequence diagrams, overview, description
-  * Changelogs (CHANGELOG.md) 
+  * Changelogs (CHANGELOG.md)
 * All development branches are reviewed, merged into master branch and deleted
 * Code Library is pushed to:
   * Mvn repo (for Java)
@@ -228,11 +232,11 @@ You can find a CL-DoD template in templates.md. It should be put into your GitHu
 # Coding Style/Conventions
 > Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. – Rick Osborne
 
-This document describes practices and opinionated set of conventions for the Java and JavaScript programming languages. 
+This document describes practices and opinionated set of conventions for the Java and JavaScript programming languages.
 It is strongly recommended for use by software engineers in Elastic.io PS team working on component building.
 Goals
 * Formalize development process
-* Increase a speed of development process 
+* Increase a speed of development process
 * Reduce an amount of errors and bugs
 * Implemented coding styles and best practices significantly improve code readability, maintainability and allows to produce more bugs-free code.
 
@@ -252,21 +256,21 @@ Goals
 ### Typical file structure for components in node.js
     .
     ├── ...
-    ├── lib                
-    │   ├── actions          
+    ├── lib
+    │   ├── actions
     │   ├── triggers
-    │   └── ...               
-    ├── spec                    
-    ├── spec-integration  
+    │   └── ...
+    ├── spec
+    ├── spec-integration
     ├── verifyCredentials.js
-    ├── component.json 
+    ├── component.json
     └── ...
 
 * verifyCredentials.js should be at the root of the repo
 * A lib folder should contain component code & static schemas
   * Any code that is in common between actions & triggers should be in the root of the lib folder
   * There should be a folder for actions, triggers and schemas respectively
-  * All actions and triggers need a main `process` function 
+  * All actions and triggers need a main `process` function
 * A spec folder for unit tests which do not talk to external systems
 * A spec-integration folder for automated tests which communicate with the external system
 
@@ -289,8 +293,8 @@ Goals
 ## Java Coding Style
 The proposed style to follow is Google recommended one: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
-There are settings files containing these rules which can be downloaded and imported into IDE (IntelliJ Idea and Eclipse). 
-Here is a short installation guide: 
+There are settings files containing these rules which can be downloaded and imported into IDE (IntelliJ Idea and Eclipse).
+Here is a short installation guide:
 [Installing the google styleguide settings in intellij and eclipse](https://github.com/HPI-Information-Systems/Metanome/wiki/Installing-the-google-styleguide-settings-in-intellij-and-eclipse)
 
 After importing, a developer can format the code automatically with a keyboard shortcut (e.g. Alt+Shift+F).
@@ -306,6 +310,6 @@ Recommended tools to use:
 [FindBugs-IDEA](https://plugins.jetbrains.com/plugin/3847-findbugs-idea). Provides static bytecode analysis to look for bugs in Java code from within IntelliJ IDEA. FindBugs is a defect detection tool for Java that uses static analysis to look for more than 200 bug patterns, such as null pointer dereferences, infinite recursive loops, bad uses of the Java libraries and deadlocks.
 
 ### Test coverage
-The code before being pull-requested must be covered with unit tests as much as possible. 
+The code before being pull-requested must be covered with unit tests as much as possible.
 To achieve easy test coverage the code should be written (or accordingly refactored) with [SOLID, KISS](https://en.wikipedia.org/wiki/KISS_principle) principles in mind. Appropriate design patterns should be used if needed as well.
 The code coverage percentage is another point to discuss and agree. But it should be as close to 100% as possible.
