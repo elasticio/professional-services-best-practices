@@ -67,7 +67,8 @@ You can find the CD-DoD template in templates.md. It should be put into a GitHub
 * CI is set up (see more [here](#automated-build-tools))
 * All development branches are reviewed
 * Support and documentation teams are notified about component updates in appropriate Slack channels
-* The general list of components is updated with all the changes: Sailor version, build type, etc. Including cases where component needs an additional setup for OEM clients (Like Google app, OAuth2 clients, etc.). [Link to the components list](https://docs.google.com/spreadsheets/d/1sEFpWfJNy3uWPSMlg9NrCK5AUlyfUmpjVIgUjovOuVw/edit?usp=sharing).
+* The general list of components is updated with all the changes: Sailor version, build type, etc. Including cases where component needs an additional setup for OEM clients (Like Google app, OAuth2 clients, etc.). [Link to the components list](https://docs.google.com/spreadsheets/d/1sEFpWfJNy3uWPSMlg9NrCK5AUlyfUmpjVIgUjovOuVw/edit?usp=sharing)
+* A release for the component is created in a GitHub repository.
 
 After QA:
 * All development branches are merged into master branch
