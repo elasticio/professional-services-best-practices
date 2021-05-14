@@ -61,13 +61,14 @@ You can find the CD-DoD template in templates.md. It should be put into a GitHub
 * Triggers/actions comply with [OIH patterns](https://github.com/elasticio/Connectors/blob/master/Adapters/AdapterBehaviorStandardization/StandardizedActionsAndTriggers.md). Even though OIH is not alive anymore, it is still a best practice to follow
 * Documentation (README.md file in the Github) is 100% ready
 * Changelogs (CHANGELOG.md) are created/updated. We use [this format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
-* `package.json` or `build.gradle` is updated:
+* The same version must be specified in `component.json` (or `build.gradle`), `package.json`, github releases, CHANGELOG.md:
   * Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)
 * Component should be dockerised, add: `"buildType":"docker"` line into `component.json`
 * CI is set up (see more [here](#automated-build-tools))
 * All development branches are reviewed
 * Support and documentation teams are notified about component updates in appropriate Slack channels
-* The general list of components is updated with all the changes: Sailor version, build type, etc. Including cases where component needs an additional setup for OEM clients (Like Google app, OAuth2 clients, etc.). [Link to the components list](https://docs.google.com/spreadsheets/d/1sEFpWfJNy3uWPSMlg9NrCK5AUlyfUmpjVIgUjovOuVw/edit?usp=sharing).
+* The general list of components is updated with all the changes: Sailor version, build type, etc. Including cases where component needs an additional setup for OEM clients (Like Google app, OAuth2 clients, etc.). [Link to the components list](https://docs.google.com/spreadsheets/d/1sEFpWfJNy3uWPSMlg9NrCK5AUlyfUmpjVIgUjovOuVw/edit?usp=sharing)
+* A release for the component is created in a GitHub repository.
 
 After QA:
 * All development branches are merged into master branch
@@ -82,7 +83,6 @@ After QA:
   * Required Environment Variables are set
   * Smoke test is finished
 * Release notes is done
-* Component Roadmap is updated.
 * Component spreadsheet is updated
 
 ## Sprint Review (Demo) Definition of Done (SR-DoD)
@@ -121,6 +121,7 @@ The following pieces of information should be stored in credentials in [BitWarde
 ## component.json
 * There should be a description/help links for the component where it's possible and makes sense
 * Each config field for the credentials, actions and triggers should have a note and placeholder unless obvious (such as for a password)
+* Please use `{"version": "1.0.1"...}`. The same version must be specified in `component.json`, `package.json`, github releases, chengelog.
 
 ## package.json
 * Component version must be specified accordingly, please visit [Semantic Versioning 2.0.0](https://semver.org/) for more details on how to do this correctly

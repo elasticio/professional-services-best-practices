@@ -30,7 +30,8 @@
 \- [ ] Component should be dockerised, add: `"buildType":"docker"` line into `component.json`\
 \- [ ] CI is set up\
 \- [ ] All development branches are reviewed\
-\- [ ] Support and documentation teams are notified about component updates in appropriate Slack channels
+\- [ ] Support and documentation teams are notified about component updates in appropriate Slack channels\
+\- [ ] A release for the component is created in a GitHub repository
 
 \*\*After QA:\*\*
 
