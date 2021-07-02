@@ -290,7 +290,7 @@ Goals
 * Config values for integration tests should be read in with [dot-env](https://www.npmjs.com/package/dot-env)
 * Spies, stubs & mocks should be done with [sinon.js](https://sinonjs.org/) (e.g. creating a mock emitter)
 * Logging should be done using the logger provided by sailor. 
-* `nyc` should be used to identify automated test coverage.
+* [Istanbul's 'nyc' command-line-client](https://istanbul.js.org/) should be used to identify automated test coverage.
 
 ## Java Coding Style
 The proposed style to follow is Google recommended one: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
