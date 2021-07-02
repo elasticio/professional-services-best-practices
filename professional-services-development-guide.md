@@ -243,7 +243,7 @@ Goals
 
 ## JavaScript Coding Style
 ### Code Quality
-* Eslint shout be used to enforce code quality/act as an early detector of bugs
+* Eslint should be used to enforce code quality/act as an early detector of bugs
   * The PS team follows Airbnb style guidelines: [see more here](https://github.com/airbnb/javascript)
     * [Here are the PS team WebStorm settings](https://github.com/elasticio/ps-webstorm-settings)
   * Eslint may also require plugins for [mocha](https://www.npmjs.com/package/eslint-plugin-mocha) and [sinon](https://www.npmjs.com/package/eslint-plugin-sinon)
@@ -252,7 +252,7 @@ Goals
   *  [Related reading on Node’s event loop/concurrency handling](https://blog.risingstack.com/node-js-at-scale-understanding-node-js-event-loop/)
 * Code (in dependency libraries) that is callback based should use promisify to allow the use of await
 * Const is preferred over let.  Using var or undeclared variables should be avoided.
-* Node.js v8 is the current standard
+* The LTS version of Node.js is the generally preferred version of Node.
 
 ### Typical file structure for components in node.js
     .
@@ -278,7 +278,7 @@ Goals
 ### Package.json
 * Package-lock.json should be checked into source code
 * Version references in package.json should be exact and not use the ^ or ~ character.
-* A [pretest script](https://docs.npmjs.com/misc/scripts) should be used to enforce linting. (e.g. eslint verifyCredentials.js lib spec spec-integration --fix) and possibly dependency security vulnerabilities with [npm audit](https://docs.npmjs.com/cli/audit) (previously [nsp](https://www.npmjs.com/package/nsp) was used in some components)
+* A [pretest script](https://docs.npmjs.com/misc/scripts) should be used to enforce linting. (e.g. eslint verifyCredentials.js lib spec spec-integration --fix) and possibly dependency security vulnerabilities with [npm audit](https://docs.npmjs.com/cli/audit) (previously [nsp](https://www.npmjs.com/package/nsp) was used in some components). 
 * A “test” script for integration tests (e.g. mocha spec)
 * An integration-test script for integration tests (e.g. “mocha spec-integration”)
 * Author, keywords, files, engines, name, version and private should be set appropriately
@@ -289,7 +289,8 @@ Goals
 * Assertions should be done with [chai’s expect framework](https://www.chaijs.com/api/bdd/)
 * Config values for integration tests should be read in with [dot-env](https://www.npmjs.com/package/dot-env)
 * Spies, stubs & mocks should be done with [sinon.js](https://sinonjs.org/) (e.g. creating a mock emitter)
-* Logging should be done by [debug](https://www.npmjs.com/package/debug)
+* Logging should be done using the logger provided by sailor. 
+* `nyc` should be used to identify automated test coverage.
 
 ## Java Coding Style
 The proposed style to follow is Google recommended one: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
