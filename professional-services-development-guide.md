@@ -10,6 +10,7 @@
     * [Tests](#tests)
       * [Unit tests](#unit-tests)
       * [Integration Tests](#integration-tests)
+    * [Code reliability](#code-reliability)
     * [Logging](#logging)
     * [Credentials](#credentials)
     * [component.json](#componentjson)
