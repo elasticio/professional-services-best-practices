@@ -39,7 +39,7 @@
  * Development team has all needed requirements
  * Access to the needed service with all needed permissions is granted
  * No open tasks that could block component development process
- * The E[]().io’s GitHub repository must be checked for another implementation of the component under development. If one exists, new repository should not be created
+ * The E.io’s GitHub repository must be checked for another implementation of the component under development. If one exists, new repository should not be created
  * Component architecture should be discussed and approved before start coding.
  * New component GIT repo preconditions:
    - repo type (private/public)
@@ -61,11 +61,11 @@ You can find the CD-DoD template in templates.md. It should be put into a GitHub
 * Triggers/actions comply with [OIH patterns](https://github.com/elasticio/Connectors/blob/master/Adapters/AdapterBehaviorStandardization/StandardizedActionsAndTriggers.md). Even though OIH is not alive anymore, it is still a best practice to follow
 * Documentation (README.md file in the Github) is 100% ready
 * Changelogs (CHANGELOG.md) are created/updated. We use [this format as a standard](https://github.com/facebook/react/blob/master/CHANGELOG.md)
-* The same version must be specified in `component.json` (or `build.gradle`), `package.json`, github releases, CHANGELOG.md:
+* The same version must be specified in `component.json` (or `build.gradle`), github releases, CHANGELOG.md:
   * Component's version is updated according to [Semantic Versioning 2.0.0](https://semver.org/)
-* Component should be dockerised, add: `"buildType":"docker"` line into `component.json`
+* Component should be dockerised, add: `"buildType":"docker"` line into `component.json` (may be omitted as it is the only build type available now)
 * CI is set up (see more [here](#automated-build-tools))
-* All development branches are reviewed
+* All development branches are reviewed and PRs are approved
 * Support and documentation teams are notified about component updates in appropriate Slack channels
 * The general list of components is updated with all the changes: Sailor version, build type, etc. Including cases where component needs an additional setup for OEM clients (Like Google app, OAuth2 clients, etc.). [Link to the components list](https://docs.google.com/spreadsheets/d/1sEFpWfJNy3uWPSMlg9NrCK5AUlyfUmpjVIgUjovOuVw/edit?usp=sharing)
 * A release for the component is created in a GitHub repository.
@@ -107,6 +107,13 @@ Demo flow specifications:
 * Designed to run against the API for the component
 * Any data created during integration tests should indicate that it was created by integration tests
 * Any data that needs to be read from the API should be flagged in the test system that it is relied upon in integration tests.
+
+## Code reliability
+* Because of cloud nature of E.io all the components must be developed with reliability in mind:
+  * Retry mechanisms must be applied. We recommend using [Exponential Backoff mechanism](https://cloud.google.com/iot/docs/how-tos/exponential-backoff)
+  * keep-alive strategy enabled (both http and https) - since Node JS Sailor 2.6.29 both http and https agents are set as global
+  * All kind of connections (e.g. DB, SFTP, HTTP(S)) must be reused (remember about connection pooling) and properly closed/opened
+  * Streams should be used wherever possible as they allow to decrease memory consumption significantly
 
 ## Logging
 * Don’t log any credentials
