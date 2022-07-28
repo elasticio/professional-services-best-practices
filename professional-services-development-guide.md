@@ -31,7 +31,7 @@
   * [Code Library Definition of Done (CL-DoD)](#code-library-definition-of-done-cl-dod)
     * [Development Process](#code-library-development-process)
     * [Quality Assurance](#code-library-quality-assurance)
-* [Coding Style/Conventions](#coding-style)
+* [Coding Style and Conventions](#coding-style-and-conventions)
   * [JavaScript](#javascript-coding-style)
   * [Java](#java-coding-style)
 
@@ -238,7 +238,7 @@ You can find a CL-DoD template in templates.md. It should be put into your GitHu
 ### Code Library Quality Assurance
 * Code Library will be only tested in affected components/integration applications due to the complexity of Code Library testing itself.
 
-# Coding Style/Conventions
+# Coding Style and Conventions
 > Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. – Rick Osborne
 
 This document describes practices and opinionated set of conventions for the Java and JavaScript programming languages.
