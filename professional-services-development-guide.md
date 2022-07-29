@@ -112,7 +112,7 @@ Demo flow specifications:
 ## Code reliability
 * Because of cloud nature of E.io all the components must be developed with reliability in mind:
   * Retry mechanisms must be applied. We recommend using [Exponential Backoff mechanism](https://cloud.google.com/iot/docs/how-tos/exponential-backoff)
-  * keep-alive strategy enabled (both http and https) - since Node JS Sailor 2.6.29 both http and https agents are set as global
+  * `keep-alive` strategy enabled (both http and https) - since Node JS Sailor 2.6.29 both http and https agents are set as global
   * All kind of connections (e.g. DB, SFTP, HTTP(S)) must be reused (remember about connection pooling) and properly closed/opened
   * Streams should be used wherever possible as they allow to decrease memory consumption significantly
 
