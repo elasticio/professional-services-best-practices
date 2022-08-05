@@ -282,6 +282,7 @@ Goals
   * All actions and triggers need a main `process` function
 * A spec folder for unit tests which do not talk to external systems
 * A spec-integration folder for automated tests which communicate with the external system
+* Always specify **User-Agent** header that uniquely identifies a service or a component and a HTTP library. It helps to debug the origin of the request. Fomat: `[component_name]/[component_version] [http_lib_name]/[http_lib_version]`. The version part is optional. Example: `User-Agent: batch-component/1.0.3 maester-client/4.0.0 axios/1.2.3`
 
 ### Package.json
 * Package-lock.json should be checked into source code
