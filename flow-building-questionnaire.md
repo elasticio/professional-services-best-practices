@@ -6,15 +6,21 @@
 
 
 <details><summary>details with summary</summary>
+  
+  * one
+  * two
+  * three
 
-* one
-* two
-* three
+  1. one
+  1. two
+  1. three
 
-1. one
-1. two
-1. three
+</details>
 
+<details><summary>details with summary 2</summary>
+  simple text 1
+  <br>
+  simple text 2
 </details>
 
 text 
