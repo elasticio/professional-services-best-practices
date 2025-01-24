@@ -27,7 +27,10 @@
 Describe what in main purpose if this integration:
 
 ---
-*
+
+<br>
+<br>
+
 ---
 
 ## Deadlines
