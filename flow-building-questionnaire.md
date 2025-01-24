@@ -1,8 +1,12 @@
+# Table of Contents
+
+* [Description](#description)
+* [Header 5](#header-5)
+
 # Header 1
 ## Header 2
 ### Header 3
 #### Header 4
-##### Header 5
 
 
 <details><summary>details with summary</summary>
@@ -22,6 +26,9 @@
   <br>
   simple text 2
 </details>
+
+
+
 
 <details>
 <summary>Click to expand!</summary>
@@ -58,3 +65,5 @@ let b = "c";
 ```
 some other text
 ```
+
+# Header 5
