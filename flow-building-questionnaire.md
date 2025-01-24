@@ -23,6 +23,17 @@
   simple text 2
 </details>
 
+<details>
+<summary>Click to expand!</summary>
+
+This is the content that will be hidden until the user clicks to expand. You can add more text, lists, images, or anything else you'd like.
+
+- Item 1
+- Item 2
+- Item 3
+
+</details>
+
 text 
 <br>
 *italics*
