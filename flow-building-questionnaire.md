@@ -133,6 +133,8 @@ The first step usually determines the initialization of the flow:
  * Based on a timer - collect new records every 10 minutes
  * Based on webhooks - the third-party system initiates a request to start the process
 
+It would also be helpful to include information regarding the expected load, specifically the maximum number of objects that will be processed during this integration over a given period of time.
+
 ---
 Object A
 
