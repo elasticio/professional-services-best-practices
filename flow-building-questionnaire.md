@@ -1,101 +1,127 @@
 # Table of Contents
 
-* **General information**
+* **General Information**
   * Description
+  * Communication Methods
   * Deadlines
-* **Systems to integrate**
-  * Documentation
-  * Test accesses
+* **Systems to Integrate**
+  * Description
   * Direction
-* **Objects**
-  * List of the objects
-  * Objects schema
-* **Integration flows**
-  * Process description
+  * Documentation
+  * Test Access
+* **Integration Flows**
+  * Objects
+  * Schema
   * Mapping
-  * Flow initialization
-  * Expected load
+  * Process
+  * Flow Initialization
+  * Expected Load
 
 <br>
-<br>
-<br>
 
-# General information
+# General Information
 
 ## Description
-
-Describe what in main purpose if this integration:
+Please describe the main purpose of this integration.
 
 ---
 
-<br>
-<br>
+...
+
+---
+
+## Communication Methods
+What is the best way for you to communicate with us during flow development (Email, Slack, etc.)?
+
+---
+
+...
 
 ---
 
 ## Deadlines
+If there are deadlines, please specify them here for each phase of the integration:
 
+---
 
+* Development:
+* Testing:
+* Staging:
+* Production:
 
-## Header 2
-### Header 3
-#### Header 4
+---
 
-<details><summary>details with summary</summary>
-  
-  * one
-  * two
-  * three
+# Systems to Integrate
 
-  1. one
-  1. two
-  1. three
+## Description
+Which systems are you planning to integrate?
 
-</details>
+---
 
-<details><summary>details with summary 2</summary>
-  simple text 1
-  <br>
-  simple text 2
-</details>
+*
 
+---
 
+## Direction
+Should the integration be one-directional (System A -> System B) or will it be bidirectional (System A <-> System B)?
 
+---
 
-<details>
-<summary>Click to expand!</summary>
+...
 
-This is the content that will be hidden until the user clicks to expand. You can add more text, lists, images, or anything else you'd like.
+---
 
-- Item 1
-- Item 2
-- Item 3
+## Documentation
+If you have online links to technical documentation, please list them below or attach them to your response.
 
-</details>
+---
 
-text 
-<br>
-*italics*
-<br>
-**bold**
-<br>
-`highlighted`
+*
 
-<span title="This is the tooltip text">tooltip</span>
+---
 
-```js
-const a = 1;
-let b = "c";
-```
+## Test Access
+In most cases, we will need test access to the systems you intend to integrate. If acceptable, please provide credentials and authentication methods here or indicate your preferred method for sharing such information.
 
-```json
-{
-  "a": 123
-}
-```
+---
 
-```
-some other text
-```
+...
 
-# Header 5
+---
+
+# Integration Flows
+
+## Objects
+How many and which specific objects are you planning to integrate?
+
+---
+
+*
+
+---
+
+## Schema
+If the provided documentation does not include the object schema, it would be helpful if you could provide it here (or as an attachment).
+
+---
+
+*
+
+---
+
+## Mapping
+To facilitate integration, we will need the mapping. Please fill in this file and attach it to your response.
+
+## Process
+Describe the step-by-step process of the integration for each object.
+
+---
+Object A
+
+*
+Object B
+
+*
+...
+
+---
