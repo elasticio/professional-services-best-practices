@@ -117,8 +117,12 @@ Demo flow specifications:
   * Streams should be used wherever possible as they allow to decrease memory consumption significantly
 
 ## Logging
-* Don’t log any credentials
+* Don’t log any credentials.
 * Don’t log the data itself as it is moving through our system.
+* There must be enough logs for a non-technical user to understand the flow of the action/trigger.
+* The logs should be meaningful and make sense.
+* Do not produce meaningless logs.
+* Logging object IDs is acceptable.
 
 ## Credentials
 The following pieces of information should be stored in credentials in [BitWarden](https://bitwarden.com) (or any other):
